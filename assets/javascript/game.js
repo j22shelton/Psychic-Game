@@ -1,4 +1,4 @@
-//all choices available for computer 
+//choices for comp 
 var computerChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
 //set variables to zero
@@ -9,14 +9,14 @@ var guessesLeft = 9;
 var guessedLetters = [];
 var letterToGuess = undefined;
 
-//functions for the "new" variables and user pushes a key
+//functions for the "new" variables and user key
 //this is where HTML is
 
 var newGuessesLeft = function() {
     document.querySelector("#guessLeft").innerHTML = "Guesses Left: " + guessesLeft;
 };
 
-//computer chooses random letter
+//comp chooses random letter
 var newLetterToGuess = function() {
     letterToGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
     console.log(letterToGuess);
@@ -44,15 +44,15 @@ document.onkeyup = function(event) {
     console.log(event.key);
     console.log(guessedLetters);
 
-    //make user guess lower case so it will not be case sensitive. 
+    //make user guess lower case, not case sensitive. 
     var userGuess = String.fromCharCode(event.keyCode).toLowerCase();
 
-    //push the guessed letter to userGuess, update var functions.
+    //push the guessed letter to userGuess, update functions.
     guessedLetters.push(userGuess);
     newGuessesLeft();
     newGuessesSoFar();
 
-    //when user still has guesses remaining and get letter, they win- otherwise they lose.
+    //if user has guesses remaining and get correct letter, they win- otherwise they lose.
     if (guessesLeft > 0) {
         if (userGuess == letterToGuess) {
             wins++;
