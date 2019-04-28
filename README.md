@@ -14,3 +14,7 @@ If the player loses, the Losses counter gains a point and the game restarts with
 
 
 Sole Contributer: Jocelyn Shelton
+
+https://j22shelton.github.io/Psychic-Game/
+
+
