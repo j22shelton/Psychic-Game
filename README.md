@@ -18,4 +18,4 @@ Sole Contributer: Jocelyn Shelton
 https://j22shelton.github.io/Psychic-Game/
 
 
-![](/images/Psychic.png?raw=true)
+![](/images/Psychicgame.png?raw=true)
